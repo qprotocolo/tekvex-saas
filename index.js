@@ -23,5 +23,4 @@ app.post("/chat", (req, res) => {
 
 // 🚀 Start do servidor
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+  console.log("🔥 CODIGO NOVO EXECUTANDO 🔥", PORT);
