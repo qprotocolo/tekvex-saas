@@ -1,18 +1,14 @@
 const express = require("express");
 const app = express();
 
-// Middleware
 app.use(express.json());
 
-// 🔑 Porta correta (Railway usa variável de ambiente)
 const PORT = process.env.PORT || 3000;
 
-// 🔍 Rota de teste
 app.get("/", (req, res) => {
-  res.send("Sofia backend rodando 🚀");
+  res.send("Sofia backend rodando ");
 });
 
-// 📡 Exemplo de rota futura (IA / chat)
 app.post("/chat", (req, res) => {
   const { message } = req.body;
 
@@ -21,6 +17,6 @@ app.post("/chat", (req, res) => {
   });
 });
 
-// 🚀 Start do servidor
 app.listen(PORT, () => {
-  console.log("🔥 CODIGO NOVO EXECUTANDO 🔥", PORT);
+  console.log(" CODIGO NOVO EXECUTANDO ", PORT);
+});
